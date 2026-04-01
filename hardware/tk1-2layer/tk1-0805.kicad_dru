@@ -1,0 +1,20 @@
+(version 1)
+
+(rule "clearance_inner"
+    (layer inner)
+    (constraint clearance (min 0.125mm)))
+
+(rule "edge_clearance_inner"
+    (layer inner)
+    (constraint clearance (min 0.45mm))
+    (condition "A.Type == 'Graphic'"))
+
+(rule "U3 fine pitch clearance"
+  (constraint clearance (min 0.15mm))
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.intersectsCourtyard('U3') && B.intersectsCourtyard('U3')")
+)
+
+(rule "default_020_except_p1_u3"
+    (constraint clearance (min 0.20mm))
+    (condition "!(A.memberOfFootprint('P1') || B.memberOfFootprint('P1') || A.memberOfFootprint('U3') || B.memberOfFootprint('U3'))")
+)

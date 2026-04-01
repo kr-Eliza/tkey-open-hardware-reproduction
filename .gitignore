@@ -1,0 +1,17 @@
+# KiCad backups and caches
+*-backups/
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.lck
+fp-info-cache
+\#auto_saved_files\#
+
+# generated outputs (KiBot, fabrication)
+output/
+*.zip
+
+# never commit built bitstreams: they can embed the device secrets
+*.bin
+uds.hex
+udi.hex

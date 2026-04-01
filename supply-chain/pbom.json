@@ -1,0 +1,23 @@
+{
+  "product": "Tillitis Key",
+  "git_commit": "bfe462c9ac2a25fc0e566fca4f9be47282968fb6",
+  "toolchain": "ghcr.io/tillitis/tkey-builder:5rc2",
+  "components": [
+    {
+      "name": "CH552 firmware",
+      "type": "firmware",
+      "source_path": "hw/usb_interface/ch552_fw",
+      "build_command": "make -C hw/usb_interface/ch552_fw",
+      "artifacts": [
+        {
+          "file": "hw/usb_interface/ch552_fw/usb_device.hex",
+          "sha256": "270fd8dd2a466ae00ac31ef5539ccf79def227ed347529564721efde8b8ea9a6"
+        },
+        {
+          "file": "hw/usb_interface/ch552_fw/usb_device.bin",
+          "sha256": "79229375c6046d4a24bf62bd7697288bbd2517df61639d2b0afaddaad5c62f55"
+        }
+      ]
+    }
+  ]
+}

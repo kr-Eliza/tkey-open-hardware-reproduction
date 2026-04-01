@@ -1,0 +1,8 @@
+git commit:
+9ac2a25fc0e566fca4f9be47282968fb6
+
+usb_device.hex:
+270fd8dd2a466ae00ac31ef5539ccf79def227ed347529564721efde8b8ea9a6
+
+usb_device.bin:
+79229375c6046d4a24bf62bd7697288bbd2517df61639d2b0afaddaad5c62f55
